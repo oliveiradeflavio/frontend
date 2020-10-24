@@ -1,6 +1,5 @@
 # Clone spotify .:)
 
-![GitHub Logo]
 ###### Usando html5, css3 e bootstrap.
 
 ###### créditos imagens J. Damasceno
