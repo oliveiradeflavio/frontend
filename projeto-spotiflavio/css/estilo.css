@@ -1,0 +1,193 @@
+html, body, #home{
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body{
+  background: url(../imagens/capa.png),
+              url(../imagens/ruid.png),
+              linear-gradient(50deg, #ff4169, #7c26f8);
+  background-attachment: fixed;
+  font-family: Helvetica, Arial, sans-serif;
+
+}
+
+
+/*transparencia na barra de menus*/
+.navbar-personalizada{
+    background: rgba(0,0,0,0,0.6);
+    padding: 15px 0px;
+}
+
+
+.navbar-light .navbar-nav .nav-link{
+  color: white;
+}
+
+.navbar-light .navbar-toggler{
+    color: rgba(255,255,255,.6);
+    border-color: rgba(255,255,255,0.6);
+}
+
+
+/*Botao inicial*/
+.btn-custom{
+  color: white;
+  border-radius: 500px;
+  text-transform: uppercase;
+  transition: background 0.4s, color 0.4s;
+  padding: 10px 20px;
+}
+
+.btn-esquerdo{
+  background: 7c2578;
+  color: white;
+}
+
+.btn-esquerdo:hover{
+  background: #6207e3;
+  color: white;
+}
+
+.btn-direito{
+  border: 2px solid white;
+}
+
+.btn-direito:hover{
+  background-color: white;
+  color: black;
+}
+
+/*Navegador carousel slide*/
+.carousel-control-next, .carousel-control-prev{
+  width: 5%;
+}
+
+/*Estrutura de conteudo*/
+.espacamento{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#servicos{
+  background: white;
+}
+
+#sevicos h2, h3{
+  color: #7c2578;
+}
+
+#recursos{
+  color: white;
+}
+
+#recursos h2{
+  color: white;
+}
+
+#recursos h3{
+  color: #9bf0e1;
+}
+
+
+/*Album e imagem do iphone*/
+.album{
+  padding: 10px 0;
+}
+
+.virarimagemiphohe{
+  transform: rotate(30deg);
+  padding-left: 80px;
+}
+
+/*Formatacao H1 a H3*/
+h1{
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  margin-bottom: 50px;
+  color: white;
+}
+
+h2{
+ font-size: 3em;
+ font-weight: 700;
+ letter-spacing: -0.03em;
+}
+
+h3{
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+
+  .btn-custom{
+    margin: 10px 15px;
+  }
+}
+
+/*  Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+
+  h1{
+    font-size: 3em;
+  }
+
+  .btn-custom{
+    margin: 10px 15px;
+  }
+
+ }
+
+/*  Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+
+    h1{
+      font-size: 4em;
+    }
+}
+
+/*  Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+  h1{
+    font-size: 6em;
+  }
+
+ }
+
+/*Rodapé*/
+
+footer{
+  background: #000;
+  padding: 50px 0px 20px 0px;
+  position: relative;
+}
+
+footer h4{
+  color: white;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+footer .navbar-nav a{
+  color: white;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+
+footer .navbar-nav a:hover{
+  color: #9bf0e1;
+}
+
+footer ul{
+  list-style: none;
+}
+
+footer ul li{
+  float: right;
+  margin: 0 12px;
+}
