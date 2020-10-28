@@ -6,4 +6,4 @@ Quando o tempo estiver acabando as cores do background
 irão ser alternadas, e o tempo irá começar a fazer um efeito
 "shake".
 
-![](/imagens/cronometro.png)
+![](https://github.com/oliveiradeflavio/front-back-end/blob/main/cronometro/imagens/cronometro.png)
