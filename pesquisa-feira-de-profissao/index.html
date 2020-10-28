@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<!--
+Flávio Oliveira
+www.flaviodeoliveira.com.br
+2020
+-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+
+    <!--Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <!-- Estilo Customizado -->
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!-- lib mascara -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mask.js"></script>
+    <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+
+    <!--Mascara telefone -->
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#telefone1").mask("(00)00000-0000")
+        $("#telefone2").mask("(00)0000-0000")
+      })
+    </script>
+
+    <title>Pesquisa Feira de Profissão Online</title>
+  </head>
+  <body>
+
+  <header>
+    <!--barra de navegacao -->
+      <div class="navbar navbar-expand-sm navbar-light transparencia ">
+        <div class="container">
+          <div class="navbar-nav mx-auto" >
+            <a href="index.html">
+            <img src="img/logo.png" alt="logo" width="400" class="img-fluid">
+            </a>
+          </div>
+        </div>
+      </div><!-- fim barra de navegacao -->
+  </header>
+
+<!-- você sabe a diferença -->
+  <section id="diferenca">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12" align="center">
+          <h1>Você sabe a diferença?</h4>
+          <h5>Cursos Presenciais X Semipresenciais X EAD</h3>
+        <ul class="list-unstyled">
+          <li class="media border-bottom mb-2 pb-2 pt-2">
+              <img class="mr-2 p-2 align-self-center" src="img/presencial.png" alt="">
+              <div class="media-body">
+                <p class="mt-5 text-justify text-white">
+                  Na modalidade presencial, o estudante tem aulas teóricas e práticas
+                  diariamente. Neste modelo, o aluno precisa ter 75% de presença obrigatória. As atividades
+                  e avaliações são realizadas na instituição. O contato com professores e colegas é
+                  constante e mais próximo.
+                </p>
+              </div>
+          </li>
+
+          <li class="media border-bottom mb-2 pb-2 pt-2">
+            <p class="mb-0 text-justify text-white">
+              São cursos que oferece uma parte das aulas no formato presencial e a outra
+              parte a distância, porém a obrigatoriedade da presença física é muito menor,
+              variando de uma a três vezes por semana, dependendo do curso e do semestre
+              em que estiver matriculado. A presença física se dará em especial para aulas
+              práticas. As aulas teóricas são desenvolvidas nos ambientes virtuais. O modelo
+              une a flexibilidade de estudos em casa com o contato com professores e colegas
+              de classe semanalmente. As avaliações são presenciais.
+            </p>
+              <div class="media-body">
+                <img class="mr-2 p-2 align-self-center" src="img/semipresencial.png" alt="">
+              </div>
+          </li>
+
+          <li class="media mb-2 pb-2 pt-2">
+            <div class="media-body">
+              <img class="mr-2 p-2 align-self-center" src="img/ensinoadistancia.png" alt="">
+            </div>
+
+            <p class="mb-0 text-justify text-white">
+              São cursos que oferece uma parte das aulas no formato presencial e a outra
+              parte a distância, porém a obrigatoriedade da presença física é muito menor,
+              variando de uma a três vezes por semana, dependendo do curso e do semestre
+              em que estiver matriculado. A presença física se dará em especial para aulas
+              práticas. As aulas teóricas são desenvolvidas nos ambientes virtuais. O modelo
+              une a flexibilidade de estudos em casa com o contato com professores e colegas
+              de classe semanalmente. As avaliações são presenciais.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+      </div>
+    </div>
+  </section><!-- fim você sabe a diferença -->
+
+
+<!-- Cadastro -->
+<section id="cadastro" class=" espacamento">
+  <div class="container align-self-center" >
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Preencha com seus Dados</h1>
+      </div>
+
+    <div class="col-md-12" align="right">
+          <h6>* campos obrigatórios</h6>
+    </div>
+
+    <form class="col-md-12" action="" method="post">
+
+      <div class="" align="center">
+          <input placeholder="Nome da Escola*" type="text" name="nome_escola" required autocomplete="off">
+          <input placeholder="Nome Completo*" type="text" name="nome" required autocomplete="off">
+          <input placeholder="Cidade e UF*" type="text" name="cidade" required autocomplete="off">
+          <input placeholder="Número de Celular/WhatsApp*" type="number_format" maxlength="11"  name="telefone1" id="telefone1" required autocomplete="off">
+          <input placeholder="Número de Telefone Fixo" type="number_format" maxlength="10" name="telefone2" id="telefone2" autocomplete="off">
+          <input placeholder="Endereço de E-mail* " type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required autocomplete="off">
+
+        <h4>Qual modelo você tem interesse?</h4>
+        <label for="Presencial">
+          <input type="radio" name="modelo_interesse" value="Presencial">Presencial
+        </label>
+
+        <label for="Semi Presencial">
+          <input type="radio" name="modelo_interesse" value="Semi Presencial" required>Semipresencial
+        </label>
+
+        <label for="100% EAD">
+          <input type="radio" name="modelo_interesse" value="100% EAD">100% EAD
+        </label>
+
+        <h4>O QUE O LEVOU A ESCOLHER O MODELO INDICADO?</h4>
+        <label for="Presencial">
+          <input type="radio" name="modelo_indicacao" value="Flexibilidade de tempo">Flexibilidade de Tempo
+        </label>
+
+        <label for="Semi Presencial">
+          <input type="radio" name="modelo_indicacao" value="Interecação" required>Interação
+        </label>
+
+        <label for="Semi Presencial">
+          <input type="radio" name="modelo_indicacao" value="Custo">Custo
+        </label>
+
+        <h4>Qual curso de interesse?</h4>
+        <div class="">
+          <textarea class="form-control" name="cursointeresse" rows="3" autocomplete="off" required autocomplete="off"></textarea>
+        </div>
+
+      <div class="col-sm-6">
+        <div class="espacamento">
+          <input class="btn btn-primary btn-md" type="submit" value="Enviar">
+        </div>
+      </div>
+    </div>
+</form>
+</section><!-- fim Cadastro -->
+
+<footer></footer>
+  </body>
+</html>

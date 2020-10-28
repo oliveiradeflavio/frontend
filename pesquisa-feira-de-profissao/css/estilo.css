@@ -1,0 +1,122 @@
+html, body{
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body{
+  background-color: #01152e;
+  font-family: Helvetica, sans-serif;
+  height: 100%;
+}
+
+/* transparecia barra de navegacao*/
+.transparencia{
+  background: rgba(0,0,0,0,0.6);
+  padding: 15px 0px;
+}
+
+/*espacamento entre elementos*/
+.espacamento{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/*estrutura de conteudos*/
+
+#diferenca h1, h5{
+  color: #ffcc29;
+}
+
+
+
+#cadastro{
+  background: white;
+}
+
+#cadastro h1{
+  font-weight: 900;
+  font-size: 2em;
+  margin-bottom: 50px;
+  color: #2a8cca;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#cadastro h6{
+  color: #FE2E2E;
+  font-style: italic;
+  font-size: 0.7em;
+}
+
+#cadastro h4{
+   margin-bottom: 30px;
+   margin-top: 30px;
+   color: #2a8cca;
+   text-transform: uppercase;
+}
+
+
+/*formulario*/
+input {
+    padding: 12px !important;
+}
+
+input, select {
+    border: none;
+    border-bottom: 1px solid #01152e;
+    margin-bottom: 30px;
+    color: #2a8cca;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    border-radius: 0;
+    line-height: 22px;
+    display: block;
+    padding: 5px;
+    width: 60%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input:focus,
+input:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
+}
+
+input:focus{
+  border-bottom: 3px solid #2a8cca;
+}
+
+input::-webkit-input-placeholder {
+    font-family: 'roboto', sans-serif;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus::-webkit-input-placeholder,
+input:valid::-webkit-input-placeholder {
+    color: #2a8cca;
+    font-size: 11px;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+    visibility: visible !important;
+}
+
+label{
+  margin-right: 10px;
+  font-family:
+}
+
+textarea{
+  text-align: justify;
+  padding: 5px;
+}
+
+footer{
+  background-color:  #01152e;
+  margin: 10px;
+}
