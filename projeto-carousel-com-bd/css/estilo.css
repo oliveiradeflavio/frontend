@@ -1,0 +1,58 @@
+/*Layout*/
+html, body, #home{
+  height: 100%;
+
+}
+
+body{
+  background: url(../imagens/background.jpg);
+
+  background-attachment: fixed;
+  font-family: Helvetica, Arial, sans-serif;
+
+}
+
+nav.navbar-fundo{
+  background: rgba(0,0,0,0.1);
+  padding: 15px 0px;
+}
+
+.navbar-light .navbar-nav .nav-link{
+  color: white;
+  padding-right: 20px;
+  padding-left: 20px;
+
+}
+
+/*Capa*/
+.capa{
+  text-align: center;
+}
+
+.carousel-control-next, .carousel-control-prev{
+  width: 5%;
+}
+
+.caixa {
+  padding: 60px 0;
+}
+
+#filmes{
+  background: #000;
+}
+
+
+h2{
+    font-size: 5em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    color: white;
+
+}
+
+h3{
+   font-size: 2em;
+   font-weight: 100;
+   color: white;
+
+}
