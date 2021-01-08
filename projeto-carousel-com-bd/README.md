@@ -5,3 +5,5 @@ banco mysql.
 
 
 <img src= "https://raw.githubusercontent.com/oliveiradeflavio/front-back-end/main/projeto-carousel-com-bd/imagens/imagem.png"/>
+<img src= "https://raw.githubusercontent.com/oliveiradeflavio/front-back-end/main/projeto-carousel-com-bd/imagens/imagem2.png"/>
+<img src= "https://raw.githubusercontent.com/oliveiradeflavio/front-back-end/main/projeto-carousel-com-bd/imagens/imagem3.png"/>
