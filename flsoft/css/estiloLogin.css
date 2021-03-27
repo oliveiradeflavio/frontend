@@ -45,7 +45,7 @@ body{
   border-color: white;
 }
 
-.box input[type="submit"]{
+.box input[type="button"]{
   border: 0;
   background: none;
   display: block;
@@ -60,7 +60,7 @@ body{
   cursor: pointer;
 }
 
-.box input[type="submit"]:hover{
+.box input[type="button"]:hover{
   background: #2ecc71;
 
 }
