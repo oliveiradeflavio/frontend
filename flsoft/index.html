@@ -40,6 +40,13 @@
           }
         }
 
+      function esqueceuSenha(){
+        varWindow = window.open(
+          'esqueciSenha.html',
+          'Recuperação de Senha',
+          'width=800, height=600, scrollbars=no'
+        )
+      }
 
     </script>
 
@@ -55,7 +62,7 @@
             <h1 class="">F.L SOFT</h1>
             <input id="usuario" type="text" name="usuario" value="" placeholder="usuario">
             <input id="senha" type="password" name="senha" value="" placeholder="senha">
-            <a href="#">Esqueceu seus dados?</a>
+            <a onclick="esqueceuSenha()">Esqueceu seus dados?</a>
             <input onclick="logar()" id="botaoEntrar" type="button" name="entrar" value="Entrar">
 
 

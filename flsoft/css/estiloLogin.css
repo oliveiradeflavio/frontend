@@ -2,7 +2,7 @@ body{
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: #000;
+
 }
 
 .box {
@@ -12,7 +12,7 @@ body{
   width: 500px;
   padding: 40px;
   position: relative;
-  border: 2px solid white;
+  border: 2px solid #fff;
   text-align: center;
   transition: 0.25s;
   }
@@ -25,16 +25,16 @@ body{
   margin: 20px auto;
   text-align: center;
   border: 2px solid #3498db;
-  padding 10px 10px;
+  padding: 10px 10px;
   width: 250px;
   outline: none;
-  color: white;
+  color: #000;
   border-radius: 24px;
   transition: 0.25s;
 }
 
 .box h1{
-  color: white;
+  color: #3498db;
   text-transform: uppercase;
   font-weight: 500;
 }
@@ -42,7 +42,7 @@ body{
 .box input[type="text"]:focus,
 .box input[type="password"]:focus{
   width: 300px;
-  border-color: white;
+  border-color: #fff;
 }
 
 .box input[type="button"]{
@@ -54,7 +54,7 @@ body{
   border: 2px solid #2ecc71;
   padding: 14px 40px;
   outline: none;
-  color: white;
+  color: #2ecc71;
   border-radius: 24px;
   transition: 0.25s;
   cursor: pointer;
@@ -62,12 +62,14 @@ body{
 
 .box input[type="button"]:hover{
   background: #2ecc71;
+  color: #fff
 
 }
 
 a {
   text-decoration: none;
   color: #848484;
+  cursor: pointer;
 }
 
 a:hover{
