@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'RobotoMono';
+}
+
+html, body{
+    height: 100%;
+}
+
+@font-face{
+    font-family: 'RobotoMono';
+    src: url('../fontes/RobotoMono-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'RobotoMono';
+    src: url('../fontes/RobotoMono-Bold.ttf');
+    font-weight: 600;
+}
+
+@font-face{
+    font-family: 'RobotoMono';
+    src: url('../fontes/RobotoMono-Light.ttf');
+    font-weight: 300;
+}

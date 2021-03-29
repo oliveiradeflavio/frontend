@@ -1,8 +1,5 @@
-body{
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
+@import 'reset.css';
+
 
 .box{
   text-align: center;
@@ -11,7 +8,7 @@ body{
   position: relative;
   padding: 40px;
   width: 550px;
-  border: 1px solid #3498db;
+  /*border: 1px solid #3498db;*/
   transition: 0.25s;
 }
 
@@ -41,7 +38,8 @@ body{
   border-color: #fff;
 }
 
-.box button[type="button"]{
+.box button[type="button"],
+.box button[type="submit"]{
   border: 0;
   background: none;
   margin: auto;
@@ -55,7 +53,8 @@ body{
 
 }
 
-.box button[type="button"]:hover{
+.box button[type="button"]:hover,
+.box button[type="submit"]:hover{
   background: #2ecc71;
   color: #fff;
 }
@@ -64,4 +63,47 @@ body{
   text-transform: uppercase;
   color: #3498db;
   font-weight: 500;
+}
+
+
+@media screen and (max-width: 1280px){
+  .box {
+    margin: auto;
+    height: 100%;
+    width: 500px;
+    padding: 40px;
+    position: relative;
+    border: 2px solid #fff;
+    text-align: center;
+    transition: 0.25s;
+    }
+}
+
+@media screen and (max-width: 768px){
+  .box{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 360px){
+  .box{
+    width: 100%;
+    left: 1%;
+    bottom: 40%;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .box{
+    width: 100%;
+    top: 25%;
+  }
+}
+
+@media screen and (max-width: 441px){
+  .box{
+    width: 100%;
+    left: 1%;
+    bottom: 40%;
+  }
 }

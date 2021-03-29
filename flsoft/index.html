@@ -20,36 +20,7 @@
     <!--css personalizado tela de login -->
     <link rel="stylesheet" href="css/estiloLogin.css">
 
-    <script>
-
-        function logar() {
-          var recuperaUsuario = document.getElementById('usuario').value.trim()
-          var recuperaSenha = document.getElementById('senha').value.trim()
-
-          if (recuperaUsuario === "" || recuperaSenha === "") {
-             alert("Confira os campos usuario e senha")
-
-          }else if (recuperaUsuario != "admin" || recuperaSenha != "123") {
-            alert("Acesso inválido")
-            document.getElementById('usuario').value = ""
-            document.getElementById('senha').value = ""
-          }else {
-            window.location.href = "dashboard.html"
-            document.getElementById('usuario').value = ""
-            document.getElementById('senha').value = ""
-          }
-        }
-
-      function esqueceuSenha(){
-        varWindow = window.open(
-          'esqueciSenha.html',
-          'Recuperação de Senha',
-          'width=800, height=600, scrollbars=no'
-        )
-      }
-
-    </script>
-
+    
 
   </head>
   <body>
@@ -73,6 +44,47 @@
       </div>
 
     </div>
+
+
+
+
+
+
+
+
+
+
+    
+    <script>
+
+      function logar() {
+        var recuperaUsuario = document.getElementById('usuario').value.trim()
+        var recuperaSenha = document.getElementById('senha').value.trim()
+
+        if (recuperaUsuario === "" || recuperaSenha === "") {
+           alert("Confira os campos usuario e senha")
+
+        }else if (recuperaUsuario != "admin" || recuperaSenha != "123") {
+          alert("Acesso inválido")
+          document.getElementById('usuario').value = ""
+          document.getElementById('senha').value = ""
+        }else {
+          window.location.href = "dashboard.html"
+          document.getElementById('usuario').value = ""
+          document.getElementById('senha').value = ""
+        }
+      }
+
+    function esqueceuSenha(){
+      varWindow = window.open(
+        'esqueciSenha.html',
+        'Recuperação de Senha',
+        'width=800, height=600, scrollbars=no'
+      )
+    }
+
+  </script>
+
 
   </body>
 </html>
