@@ -1,0 +1,143 @@
+@import 'reset.css';
+
+.flex-dashboard {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.flex-dashboard header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    background-color: white;
+    padding: 10px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.flex-dashboard header a {
+    text-decoration: none;
+    color: #72777a;
+}
+
+.flex-dashboard header a > i{
+    color: #3498db;
+}
+
+
+aside {
+    display: block;
+    height: 100%;
+    width: 300px;
+    background-color: #3498db;
+    
+}
+
+main{
+    display: block;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    width: calc(100% - 300px);
+}
+
+main .main-content{
+    padding: 30px;
+    width: 100%;
+    height: calc(100% - 90px); 
+    background-color: #f7f1f1;
+    overflow-y: auto;
+}
+
+/* pernsonalizando barra dentro do main content*/
+.main-content::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+	background-color: #ffffff;
+	border-radius:  8px;
+}
+
+.main-content::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: #ffffff;
+}
+
+.main-content::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-image: -webkit-gradient(linear,
+									   left bottom,
+									   left top,
+									   color-stop(0.44, #53b1f0),
+									   color-stop(0.72, #61baf5),
+									   color-stop(0.86, #67bdf7));
+}
+/*fim personalizacao da barra*/
+
+aside .sidebar-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    padding: 10px 30px;
+    height: 90px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 0px;
+}
+
+aside .sidebar-title img{
+    height: 50px;
+    width: 50px;
+}
+
+aside .sidebar-title h2{
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.menu{
+    margin-left: -20px;
+    margin-top: 40px;
+}
+
+.menu ul{
+    list-style-type: none;
+    
+}
+
+.menu ul li{
+    padding: 30px 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+
+.menu ul li:hover{  
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.5);
+    transition: 0.25s;
+    
+}
+
+.menu ul li i {
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.menu ul li a {
+    color: #3f3f3f;
+    margin-left: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu ul li a:hover {
+    color: #000000;
+    transition: 0.25s;
+}
