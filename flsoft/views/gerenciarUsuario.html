@@ -7,7 +7,7 @@
   https://github.com/oliveiradeflavio
    -->
     <meta charset="utf-8">
-    <title>Dashboard</title>
+    <title>Gerenciar Usuário</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap Css-->
@@ -37,11 +37,11 @@
           <ul>
             <li>
               <i class="fas fa-md fa-home"></i>
-              <a href=""> Dashboard</a>
+              <a href="dashboard.html"> Dashboard</a>
             </li>
             <li>
               <i class="fas fa-user"></i> 
-              <a href="gerenciarUsuario.html">Gerenciar Usuários</a>
+              <a href="#">Gerenciar Usuários</a>
             </li>
             <li>
               <i class="fas fa-truck"></i> 
@@ -66,9 +66,16 @@
           <a href="../index.html"><i class="fas fa-md fa-sign-out-alt"></i> Logout</a>
         </header>
         <div class="main-content">
-          dashboard
+         <div class="panel-row">
+           <button class="panel panel-50" a-view="cadastrarUsuario" onclick="fetchContent(this)" a-folder="cadusuario">Cadastrar Usuário</button>
+           <button class="panel panel-50" a-view="vizualizarUsuario" onclick="fetchContent(this)" a-folder="cadusuario">Vizualizar Usuário </button>
+         </div>
+         <div class="content" id="ajax-content"></div>
+         
         </div>
       </main>
     </div>
+
+    <script src="../js/ajax.js"></script>
   </body>
 </html>
