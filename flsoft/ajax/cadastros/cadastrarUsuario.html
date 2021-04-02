@@ -19,7 +19,22 @@
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous">
 
-      <link rel="stylesheet" href="/css/cadastrarUsuario.css">
+    <!-- css personalizado -->
+      <link rel="stylesheet" href="/css/cadastros.css">
+
+      <!-- importação das biblioteca jquery para máscara nos campos-->
+    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery.mask.js"></script>
+    <script type="text/javascript" src="../../js/jquery.mask.min.js"></script>
+    
+        <!-- mascara telefone -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#celular").mask("(00)00000-0000")
+                $("#telefone").mask("(00)0000-0000")
+                console.log($("#celular").mask("(00)00000-0000"));
+            })
+        </script>
 
 </head>
 <body>
@@ -32,12 +47,12 @@
 
            <div class="form-group col-md-3">
             <label for="cpf">CPF</label>
-            <input type="number" class="form-control">
+            <input type="number_format" maxlength="11" class="form-control">
            </div>
 
             <div class="form-group col-md-2">
                 <label for="dtnascimento">Data de Nascimento</label>
-                <input type="number" class="form-control">
+                <input type="number_format" class="form-control">
             </div>
         </div>
         <div class="row">
@@ -53,7 +68,7 @@
 
             <div class="form-group col-md-2">
                 <label for="cep">CEP</label>
-                <input type="number" class="form-control">
+                <input type="number_format" maxlength="8" class="form-control">
             </div>
 
             <div class="form-group col-md-3">
@@ -63,23 +78,56 @@
         </div>
         <div class="row">
             <div class="form-group col-md-1">
-                <label for="uf">UF</label>
-                <input type="text" class="form-control">
+               <label for="uf">UF</label>
+               <select name="uf" id="uf" class="form-select">
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+               </select>
             </div>
 
             <div class="form-group col-md-3">
                 <label for="telefone">Telefone</label>
-                <input type="number" class="form-control">
+                <input type="number_format" name="telefone" id="celular" maxlength="10" class="form-control">
             </div>
             
             <div class="form-group col-md-3">
-                <label for="celular">Celular</label>
-                <input type="number" class="form-control">
+                <label for="celular" >Celular</label>
+                <input type="number_format" name="celular" id="telefone" maxlength="11" class="form-control">
+            </div>
+
+            <div class="form-group col-md-3" >
+                <label for="email">E-mail</label>
+                <input type="text" name="email" id="" class="form-control">
             </div>
 
             <div class="form-group col-md-2">
                 <label for="dtcadastro">Data de Cadastro</label>
-                <input type="number" class="form-control" disabled>
+                <input type="number_format" class="form-control" disabled>
             </div>
         </div>
         <div class="row">
@@ -89,5 +137,13 @@
             </div>
         </div>
     </form>
+
+
+
+  
+
+
+    
+  
 </body>
 </html>

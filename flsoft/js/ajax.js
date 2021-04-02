@@ -9,7 +9,6 @@ function fetchContent(el){
         return html
     })
     .then(html => {
-        console.log(html);
         content.innerHTML = html
     })
 }
