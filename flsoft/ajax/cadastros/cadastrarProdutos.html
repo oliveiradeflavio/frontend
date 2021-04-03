@@ -17,10 +17,54 @@
      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
      crossorigin="anonymous">
 
-   <link rel="stylesheet" href="../css/dashboard.css">
+   <link rel="stylesheet" href="../css/cadastros.css">
     <title>Cadastrar Produtos</title>
 </head>
 <body>
-  <p>cadastrar produtos</p>
+    <div class="row">
+      <div class="form-group col-md-2">
+        <label for="codigo">Código</label>
+        <input type="text" class="form-control">
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-md-4">
+        <label for="codigodebarras">Código de Barras</label>
+        <input type="text" class="form-control">
+      </div>
+      
+      <div class="form-group col-md-3">
+        <label for="tipo">Tipo</label>
+        <input type="text" class="form-control">
+      </div>
+
+      <div class="form-group col-md-3">
+        <label for="departamento">Departamento</label>
+        <input type="text" class="form-control">
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-md-4">
+        <label for="ncm">NCM</label>
+        <input type="text" class="form-control">
+      </div>
+
+      <div class="form-group col-md-3">
+        <label for="custo">Custo</label>
+        <input type="text" class="form-control">
+      </div>
+
+      <div class="form-group col-md-3">
+        <label for="pvenda">Preço de Venda</label>
+        <input type="text" class="form-control">
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group ajusteBotoes">
+        <button type="submit" class="btn btn-primary">Salvar</button>
+        <a href="/views/gerenciarProdutos.html" class="btn btn-danger">Cancelar</a>
+      </div>
+
+    </div>
 </body>
 </html>
