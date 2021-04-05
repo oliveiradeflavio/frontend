@@ -2,10 +2,16 @@
 
 .row{
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    
 }
 
 .ajusteBotoes{
     margin-top: 24px;
     margin-bottom: 10px;
+}
+
+.elevacaoDiv{
+    padding: 20px;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);   
 }
