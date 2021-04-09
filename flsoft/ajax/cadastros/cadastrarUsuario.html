@@ -21,20 +21,6 @@
 
     <!-- css personalizado -->
       <link rel="stylesheet" href="/css/cadastros.css">
-
-      <!-- importação das biblioteca jquery para máscara nos campos-->
-    <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="../../js/jquery.mask.js"></script>
-    <script type="text/javascript" src="../../js/jquery.mask.min.js"></script>
-    
-        <!-- mascara telefone -->
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $("#celular").mask("(00)00000-0000")
-                $("#telefone").mask("(00)0000-0000")
-            })
-        </script>
-
 </head>
 <body>
     <form action="" method="POST"> 
@@ -127,7 +113,7 @@
 
             <div class="form-group col-md-2">
                 <label for="dtcadastro">Data de Cadastro</label>
-                <input type="number_format" class="form-control" disabled>
+                <input type="number_format" id="dtcadastro" class="form-control" disabled>
             </div>
         </div>
         <div class="row">
@@ -142,10 +128,30 @@
 
 
 
-  
 
+
+  
+  <!-- importação das biblioteca jquery para máscara nos campos-->
+  <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="../../js/jquery.mask.js"></script>
+  <script type="text/javascript" src="../../js/jquery.mask.min.js"></script>
+  
+      <!-- mascara telefone -->
+      <script type="text/javascript">
+          $(document).ready(function(){
+              $("#celular").mask("(00)00000-0000")
+              $("#telefone").mask("(00)0000-0000")
+          })
+      </script>
 
     
-  
+    <!-- data de cadastro no input -->
+    <script type="text/javascript">
+        var hoje = new Date();
+        var dia = hoje.getDate();
+        var mes = hoje.getMonth()+1;
+        var ano = hoje.getFullYear();
+        document.getElementById('dtcadastro').value = dia+"/"+mes+"/"+ano;
+    </script>
 </body>
 </html>
