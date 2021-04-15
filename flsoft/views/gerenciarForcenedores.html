@@ -40,9 +40,13 @@
               <a href="dashboard.html"> Dashboard</a>
             </li>
             <li>
-              <i class="fas fa-user"></i> 
-              <a href="gerenciarUsuario.html">Gerenciar Usuários</a>
-            </li>
+              <i class="fas fa-user"></i>
+              <a href="perfil.html">Perfil</a>
+          </li>
+          <li>
+              <i class="fas fa-user-plus"></i>
+            <a href="gerenciarUsuario.html">Gerenciar Usuários</a>
+          </li>
             <li>
               <i class="fas fa-truck"></i> 
               <a href="gerenciarForcenedores.html">Gerenciar Fornecedores</a>
@@ -70,8 +74,12 @@
             <h2>Gerenciar Fornecedores</h2>
           </div>
          <div class="panel-row">
-           <button class="panel panel-50" a-view="cadastrarFornecedor" onclick="fetchContent(this)" a-folder="cadastros">Cadastrar Fornecedor</button>
-           <button class="panel panel-50" a-view="vizualizarFornecedor" onclick="fetchContent(this)" a-folder="cadastros">Vizualizar Fornecedor </button>
+           <button class="panel panel-50" a-view="cadastrarFornecedor" onclick="fetchContent(this)" a-folder="cadastros">
+            <i class="fas fa-truck-loading"></i>
+              Cadastrar Fornecedor</button>
+           <button class="panel panel-50" a-view="vizualizarFornecedor" onclick="fetchContent(this)" a-folder="cadastros">
+            <i class="fas fa-search"></i>
+            Vizualizar Fornecedor </button>
          </div>
          <div class="content" id="ajax-content"></div>
          

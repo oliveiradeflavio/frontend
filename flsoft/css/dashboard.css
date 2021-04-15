@@ -192,3 +192,18 @@ aside .sidebar-title h2{
     color: #000000;
     transition: 0.25s;
 }
+
+.perfil-parent{
+    padding: 10px 0;
+    margin-left: 50px;
+}
+
+.form-group{
+    margin: 10px;
+}
+
+.ajusteBotoes{
+    align-self: center;
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
