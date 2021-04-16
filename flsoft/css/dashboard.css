@@ -156,8 +156,7 @@ aside .sidebar-title h2{
 }
 
 .menu ul{
-    list-style-type: none;
-    
+    list-style-type: none;  
 }
 
 .menu ul li{
@@ -167,13 +166,11 @@ aside .sidebar-title h2{
     flex-direction: row;
     align-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-
 }
 
 .menu ul li:hover{  
     border-bottom: 1.5px solid rgba(255, 255, 255, 0.5);
-    transition: 0.25s;
-    
+    transition: 0.25s;   
 }
 
 .menu ul li i {
@@ -198,25 +195,22 @@ aside .sidebar-title h2{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-width: 900px;
+    max-width: 1300px;
     width: 100%;
-    padding: 40px 20px;
     background-color: white;
-
 }
 
 .perfil-parent{
-    padding: 10px 0px;   
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .perfil-img{
-    margin-right: 10px;
     width: 400px;
     height: 400px;
     box-shadow: 0 0 2rem rgba(0,0,0,0.1);
+    margin: auto;
 }
 
 .form-group{
@@ -224,6 +218,7 @@ aside .sidebar-title h2{
 }
 
 .perfil-form{
+    margin: auto;
     width: 60%;
     text-transform: uppercase;
 }
@@ -238,11 +233,8 @@ aside .sidebar-title h2{
 }
 
 .perfil-form input[type=file]{
-    padding: 0px 10px;
     cursor: pointer;
 }
-
-
 
 .ajusteBotoes{
     align-self: center;
