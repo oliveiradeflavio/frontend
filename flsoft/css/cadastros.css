@@ -19,3 +19,12 @@
 .table .fas{
     cursor: pointer;
 }
+
+.row button:hover{
+    transform: scale(1.1);
+}
+
+.row a:hover{
+    transform: scale(1.1);
+    transition: 0.25s;
+}

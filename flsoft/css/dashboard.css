@@ -193,14 +193,56 @@ aside .sidebar-title h2{
     transition: 0.25s;
 }
 
+.perfil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    width: 100%;
+    padding: 40px 20px;
+    background-color: white;
+
+}
+
 .perfil-parent{
-    padding: 10px 0;
-    margin-left: 50px;
+    padding: 10px 0px;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfil-img{
+    margin-right: 10px;
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 0 2rem rgba(0,0,0,0.1);
 }
 
 .form-group{
     margin: 10px;
 }
+
+.perfil-form{
+    width: 60%;
+    text-transform: uppercase;
+}
+
+.form-group button:hover{
+    transform: scale(1.1);
+    transition: 0.25s;
+}
+
+.perfil-form label{
+    font-size: 14px;
+}
+
+.perfil-form input[type=file]{
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+
 
 .ajusteBotoes{
     align-self: center;
