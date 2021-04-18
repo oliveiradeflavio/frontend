@@ -3,12 +3,9 @@
 
 .box{
   text-align: center;
-  margin: auto;
-  top: 20%;
+  margin-top: 50px;
+  margin-left: 50px;
   position: relative;
-  padding: 40px;
-  width: 550px;
-  /*border: 1px solid #3498db;*/
   transition: 0.25s;
 }
 
@@ -28,7 +25,7 @@
   color: #000;
   outline: none;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .box input[type="text"]:focus,
@@ -66,44 +63,36 @@
 }
 
 
-@media screen and (max-width: 1280px){
-  .box {
-    margin: auto;
-    height: 100%;
-    width: 500px;
-    padding: 40px;
-    position: relative;
-    border: 2px solid #fff;
-    text-align: center;
-    transition: 0.25s;
-    }
-}
-
-@media screen and (max-width: 768px){
+@media (min-width: 320px) {
   .box{
-    width: 100%;
+    top: -100px;
+  } 
+  .box input[type="text"],
+  .box input[type="email"],
+  .box input[type="number_format"]{
+    width: 300px;
   }
 }
 
-@media screen and (max-width: 360px){
+@media (min-width: 576px) { 
+  
+}
+
+
+@media (min-width: 768px) { 
   .box{
-    width: 100%;
-    left: 1%;
-    bottom: 40%;
+    top: 20%;
+    bottom: 50%;
+
   }
 }
 
-@media screen and (max-width: 320px){
-  .box{
-    width: 100%;
-    top: 25%;
-  }
+
+@media (min-width: 992px) { 
+
 }
 
-@media screen and (max-width: 441px){
-  .box{
-    width: 100%;
-    left: 1%;
-    bottom: 40%;
-  }
+
+@media (min-width: 1200px) { 
+
 }

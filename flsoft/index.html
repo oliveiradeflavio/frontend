@@ -7,7 +7,7 @@
   https://github.com/oliveiradeflavio
    -->
     <meta charset="utf-8">
-    <title>LOGIN</title>
+    <title>FL SOFT</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -37,12 +37,12 @@
 
           <form class="box">
 
-            <h1 class="">F.L SOFT</h1>
+            <h1 class="">LOGIN</h1>
             <input id="usuario" type="text" name="usuario" value=""
               placeholder="usuario" autocomplete="off">
             <input id="senha" type="password" name="senha" value=""
               placeholder="senha" autocomplete="off">
-            <a onclick="esqueceuSenha()">Esqueceu seus dados?</a>
+            <a href="/views/esqueciSenha.html">Esqueceu seus dados?</a>
             <input onclick="logar()" id="botaoEntrar" type="button"
               name="entrar" value="Entrar">
 
@@ -64,7 +64,7 @@
         if (recuperaUsuario === "" || recuperaSenha === "") {
            alert("Confira os campos usuario e senha")
 
-        }else if (recuperaUsuario != "admin" || recuperaSenha != "123") {
+        }else if (recuperaUsuario != "00000000000" || recuperaSenha != "123") {
           alert("Acesso inválido")
           document.getElementById('usuario').value = ""
           document.getElementById('senha').value = ""
@@ -74,15 +74,6 @@
           document.getElementById('senha').value = ""
         }
       }
-
-    function esqueceuSenha(){
-      varWindow = window.open(
-        '/views/esqueciSenha.html',
-        'Recuperação de Senha',
-        'width=800, height=600, scrollbars=no'
-      )
-    }
-
   </script>
   </body>
 </html>

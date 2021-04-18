@@ -210,7 +210,8 @@ aside .sidebar-title h2{
     width: 400px;
     height: 400px;
     box-shadow: 0 0 2rem rgba(0,0,0,0.1);
-    margin: auto;
+    margin-top: -60px;
+    margin-left: 10px;
 }
 
 .form-group{

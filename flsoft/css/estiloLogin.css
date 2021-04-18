@@ -1,15 +1,10 @@
 @import 'reset.css';
 
 .box {
-  margin: auto;
-  height: 100%;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  padding: 40px;
-  position: relative;
-  border: 2px solid #fff;
   text-align: center;
+  margin-top: 50px;
+  margin-left: 50px;
+  position: relative;
   transition: 0.25s;
   }
 
@@ -33,6 +28,7 @@
   color: #3498db;
   text-transform: uppercase;
   font-weight: 500;
+  text-align: center;
 }
 
 .box input[type="text"]:focus,
@@ -66,94 +62,60 @@ a {
   text-decoration: none;
   color: #848484;
   cursor: pointer;
+  text-align: center;
 }
 
 a:hover{
   color: #848484;
 }
 
-
-@media screen and (max-width: 1280px){
-  .box {
-    margin: auto;
-    height: 100%;
-    top: 50%;
-    left: 50%;
-    width: 500px;
-    padding: 40px;
-    position: relative;
-    border: 2px solid #fff;
-    text-align: center;
-    transition: 0.25s;
-    }
-}
-
-@media screen and (max-width: 991px){
-  .box {
-    width: 100%;
-   
-    }
-}
-
-@media screen and (max-width: 768px){
+@media (min-width: 280px) { 
   .box{
-    width: 100%;
+    left: -30%;
+    top: 30%;
   }
 }
 
-@media screen and (max-width: 500px){
+@media (min-width: 320px) { 
+  .box input[type="text"],
+  .box input[type="password"]{
+    width: 200px;
+  }
+  
+  
   .box{
-    width: 100%;
-    left: 1%;
-    bottom: 40%;
+    left: -5%;
+    top: 15%;
   }
 }
 
-@media screen and (max-width: 600px){
+@media (min-width: 540px) { 
   .box{
-    width: 100%;
-    left: 1%;
-    bottom: 40%;
+    left: 10%;
+    top: 30%;
   }
 }
 
-@media screen and (max-width: 700px){
-  .box{
-    width: 100%;
-    left: 1%;
-    bottom: 40%;
-  }
+@media (min-width: 576px) { 
+ 
 }
 
-@media screen and (max-width: 800px){
+
+@media (min-width: 768px) { 
   .box{
-    width: 100%;
-    left: 1%;
-    bottom: 40%;
+    top: 30%;
+    left: 30%;
   }
 }
 
 
-@media screen and (max-width: 360px){
-  .box{
-    width: 100%;
-    left: 1%;
-    bottom: 40%;
-  }
+@media (min-width: 992px) { 
+
 }
 
-@media screen and (max-width: 320px){
+@media (min-width: 1200px) { 
   .box{
-    width: 100%;
-    top: 25%;
-    
-  }
-}
-
-@media screen and (max-width: 441px){
-  .box{
-    width: 100%;
-    left: 1%;
-    bottom: 40%;
+    top: 30%;
+    left: 40%;
   }
 }
