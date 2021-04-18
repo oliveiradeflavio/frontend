@@ -1,6 +1,5 @@
 @import 'reset.css';
 
-
 .box{
   text-align: center;
   margin-top: 50px;
@@ -8,7 +7,6 @@
   position: relative;
   transition: 0.25s;
 }
-
 
 .box input[type="text"],
 .box input[type="email"],
@@ -59,7 +57,7 @@
 .box h1 {
   text-transform: uppercase;
   color: #3498db;
-  font-weight: 500;
+  font-size: 30px;
 }
 
 

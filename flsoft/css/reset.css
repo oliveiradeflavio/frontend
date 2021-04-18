@@ -10,19 +10,20 @@ html, body{
 }
 
 @font-face{
-    font-family: 'RobotoMono';
-    src: url('../fontes/RobotoMono-Regular.ttf');
+    font-family: 'MontserratAlternates';
+    src: url('../fontes/MontserratAlternates-Regular.ttf');
     font-weight: normal;
 }
 
 @font-face{
-    font-family: 'RobotoMono';
-    src: url('../fontes/RobotoMono-Bold.ttf');
+    font-family: 'MontserratAlternates';
+    src: url('../fontes/MontserratAlternates-Bold.ttf');
     font-weight: 600;
 }
 
 @font-face{
-    font-family: 'RobotoMono';
-    src: url('../fontes/RobotoMono-Light.ttf');
+    font-family: 'MontserratAlternates';
+    src: url('../fontes/MontserratAlternates-Light.ttf');
     font-weight: 300;
 }
+    
