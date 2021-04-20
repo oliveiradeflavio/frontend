@@ -9,6 +9,10 @@ html, body{
     height: 100%;
 }
 
+a{
+    text-decoration: none;
+}
+
 @font-face{
     font-family: 'MontserratAlternates';
     src: url('../fontes/MontserratAlternates-Regular.ttf');
@@ -26,4 +30,4 @@ html, body{
     src: url('../fontes/MontserratAlternates-Light.ttf');
     font-weight: 300;
 }
-    
+

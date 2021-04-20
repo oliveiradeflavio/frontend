@@ -99,6 +99,10 @@ main .main-content{
     color: #72777a;
 }
 
+.sidebar-title a{
+    color: #3f3f3f;
+}
+
 .panel-row {
     display: flex;
     flex-direction: row;
@@ -146,8 +150,9 @@ aside .sidebar-title img{
 }
 
 aside .sidebar-title h2{
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 5px;
+    font-weight: normal;
 }
 
 .menu{
@@ -218,7 +223,7 @@ aside .sidebar-title h2{
     height: 400px;
     box-shadow: 0 0 2rem rgba(0,0,0,0.1);
     margin-top: -60px;
-    margin-left: 10px;
+    margin-left: auto;
     background-image: url(/imagens/perfil.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -233,7 +238,7 @@ aside .sidebar-title h2{
 
 .perfil-form{
     margin: auto;
-    width: 60%;
+    width: 50%;
     text-transform: uppercase;
 }
 
@@ -256,3 +261,112 @@ aside .sidebar-title h2{
     margin-bottom: 10px;
 }
 
+.dashboard-content{
+    padding: 10px 0px;
+}
+
+.dashboard-flex-parent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dashboard-box{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 350px;
+    width: 22%;
+    height: 210px;
+    background-color: white;
+}
+
+.dashboard-box:hover{
+    transition: 0.5s;
+    box-shadow: 0 0 1rem rgba(156, 156, 156, 0.7);
+    transform: scale(1.1);
+}
+
+.box-icon{
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-icon i{
+    font-size: 22px;    
+}
+
+.value{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.type{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+.box-usuario{
+    background-color:rgba(83, 177, 240, 0.1); 
+    color: #6283f5;
+}
+
+.box-fornecedor{
+    background-color:rgba(229, 115, 155, 0.1); 
+    color: #ef5358;
+}
+
+.box-produto{
+    background-color:rgba(110, 138, 101, 0.1); 
+    color: #afb42b;
+}
+
+.type-produto{
+    color: #afb42b;
+}
+
+.type-fornecedor{
+    color: #ef5358;
+}
+
+.type-cadastro{
+    color: #6283f5;
+}
+
+
+@media (min-width: 280px) { 
+ 
+  }
+  
+  @media (min-width: 320px) { 
+  
+  }
+  
+  @media (min-width: 540px) { 
+  
+  }
+  
+  @media (min-width: 576px) { 
+   
+  }
+  
+  @media (min-width: 768px) { 
+  
+  }
+
+  @media (min-width: 992px) { 
+    
+  }
+  
+  @media (min-width: 1200px) { 
+
+  }
