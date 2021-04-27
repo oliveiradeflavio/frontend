@@ -30,7 +30,7 @@
 
 
   </head>
-  <body>
+  <body onload="autoLogin()">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
@@ -56,13 +56,19 @@
     </div>
 
     <script>
+      
+      //função para eu ficar digitando login toda hora =D
+      function autoLogin(){
+        document.getElementById('usuario').value='00000000000'
+        document.getElementById('senha').value='123'
+      }
 
       function logar() {
         var recuperaUsuario = document.getElementById('usuario').value.trim()
         var recuperaSenha = document.getElementById('senha').value.trim()
 
         if (recuperaUsuario === "" || recuperaSenha === "") {
-           alert("Confira os campos usuario e senha")
+           alert("Confira os campos cpf e senha")
 
         }else if (recuperaUsuario != "00000000000" || recuperaSenha != "123") {
           alert("Acesso inválido")
