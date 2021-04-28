@@ -11,4 +11,16 @@ function fetchContent(el){
     .then(html => {
         content.innerHTML = html
     })
+    .then(() => {
+        const script = document.createElement("script")
+        script.async = true
+        script.src = "/js/esqueciSenha.js"
+        document.body.appendChild(script);
+    })
+    .then(() => {
+        const script = document.createElement("script")
+        script.async = true
+        script.src = "/js/gerenciarUsuario.js"
+        document.body.appendChild(script);
+    })
 }
