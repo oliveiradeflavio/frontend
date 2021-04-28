@@ -23,4 +23,23 @@ function fetchContent(el){
         script.src = "/js/gerenciarUsuario.js"
         document.body.appendChild(script);
     })
+    .then(() => {
+        const script = document.createElement("script")
+        script.async = true
+        script.src = "/js/perfil.js"
+        document.body.appendChild(script);
+    })
+    .then(() => {
+        const script = document.createElement("script")
+        script.async = true
+        script.src = "/js/gerenciarFornecedor.js"
+        document.body.appendChild(script);
+    })
+    .then(() => {
+        const script = document.createElement("script")
+        script.async = true
+        script.src = "/js/gerenciarProdutos.js"
+        document.body.appendChild(script);
+    })
+    
 }

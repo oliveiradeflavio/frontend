@@ -93,14 +93,14 @@
 
                             <div class="form-group ">
                                 <label for="cpf">CPF</label>
-                                <input type="number" class="form-control" id="cpf" placeholder="CPF">
+                                <input type="number-format" class="form-control" id="cpf" maxlength="11" name="cpf" placeholder="CPF">
                               </div>
                         </div>
                         
                         <div class="row">
                             <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="Email">
+                                <input type="email" class="form-control" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email">
                               </div>
     
                             <div class="form-group">
@@ -120,7 +120,7 @@
                         </div>
                             <div class="row">
                                 <div class="form-group  ajusteBotoes">
-                                <button type="submit" class="btn btn-primary">Salvar</button>
+                                <button onclick="checaCampos()" class="btn btn-primary">Salvar</button>
                                  <button class="btn btn-danger">Cancelar</button>
                                 </div>
                             </div>
@@ -144,12 +144,7 @@
     <script src="../plugins/jquery-validation/dist/jquery.validate.js"></script>
     <script src="../plugins/jquery-validation/dist/additional-methods.min.js"></script>
     <script src="../plugins/jquery-validation/dist/localization/messages_pt_BR.min.js"></script>
-<script>
-  function preenchPerfil(){
-    document.getElementById('nome').value="Flávio Oliveira"
-    document.getElementById('cpf').value='00000000000'
-    document.getElementById('email').value='teste@teste.com.br'
-  }
-</script>
+    <script src="../plugins/jquery-mask/jquery.mask.min.js"></script>
+    <script src="/js/perfil.js"></script>
   </body>
 </html>
