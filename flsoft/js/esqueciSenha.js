@@ -55,28 +55,27 @@ function validaCPF(cpf) {
       var nome = document.getElementById('nomecompleto').value
       var cpf = document.getElementById('cpf').value
       var email = document.getElementById('email').value
+      
+      if (nome === "" || cpf === "" || email === "") {
+        console.log("campos obrigatório");
+        alert("Preenchimento dos campos é obrigatório.")
 
-   if (nome === "" || cpf === "" || email === "") {
-      console.log("obrigatório");
-      alert("Preenchimento dos campos é obrigatório.")
+      }else if(nome.length < 10){
+        console.log("Campo nome está incompleto")
+        alert("Digite o nome completo")
 
-    }else if(nome.length < 10){
-      console.log("Campo nome está incompleto")
-      alert("Digite o nome completo")
+      }else if (validaCPF(cpf) == false)  {
+        console.log("cpf invalido");
+        alert("Número de CPF inválido")
+  
+      }else if (validaEmail(email) == false) {
+        console.log("email incorreto")
 
-    }else if (validaCPF(cpf) == false)  {
-      console.log("cpf invalido");
-      alert("Número de CPF inválido")
-
-    }else if (validaEmail(email) == false) {
-      console.log("email incorreto");
-
-
-    }else{
-      console.log("enviado com sucesso")
-      alert("Em alguns minutos a nova senha chegará no seu e-mail.")
-      //limpaCampos()
-    }
+      }else{
+        document.getElementById("formEsqueciSenha").submit
+        console.log("enviado com sucesso")
+        alert("Em alguns minutos a nova senha chegará no seu e-mail.")
+      }
   }
 
   //limpando os 3 campos
