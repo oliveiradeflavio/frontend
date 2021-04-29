@@ -90,13 +90,31 @@ function validaSenha(){
 function checaCampos(){
     if(document.getElementById('check-senha').checked){
         validaSenha()
-    }else if(validaCPF('cpfPerfil') == false){
+    }else if(validaCPF('cpfPerfil') == true){
         Swal.fire({
             icon: 'warning',
             title: 'Oops...',
             backdrop: false,
             text: 'Número de CPF inválido'
            })
+    }else {
+        Swal.fire({
+            icon: 'success',
+            title: 'Salvar',
+            text: 'Registros salvo com sucesso',
+            showConfirmButton: false,
+            timer: 3000,
+            backdrop: false,
+        })
     }
    
+}
+
+function cancelaCampos(){
+    preenchPerfil()
+    document.getElementById('check-senha').checked = false
+    document.getElementById('senhaAntiga').disabled = true
+    document.getElementById('senhaNova').disabled = true
+    document.getElementById('senhaAntiga').value = ""
+    document.getElementById('senhaNova').value = ""
 }

@@ -39,30 +39,33 @@
           <form class="box">
 
             <h1 class="">Login</h1>
-            <input id="usuario" type="text" name="usuario" value=""
+            <input id="usuario" type="number-format" pattern="[0-9]*" onkeypress="preventNonNumericalInput(event)" maxlength="11" name="usuario" value=""
               placeholder="CPF" autocomplete="off">
             <input id="senha" type="password" name="senha" value=""
               placeholder="Senha" autocomplete="off">
             <a href="/views/esqueciSenha.html">Esqueceu seus dados?</a>
             <input onclick="logar()" id="botaoEntrar" type="button"
               name="entrar" value="Entrar">
-
-
           </form>
-
         </div>
-
       </div>
-
     </div>
-
-
 
 
     <script src="/plugins/jquery/jquery.min.js"></script>
     <script src="/plugins/sweetalert/dist/sweetalert2.all.min.js"></script>
     <script>
     
+      //campo número entrada de somente número, impedindo texto via teclado. 
+        function preventNonNumericalInput(e) {
+            e = e || window.event;
+            var charCode = (typeof e.which == "undefined") ? e.keyCode : e.which;
+            var charStr = String.fromCharCode(charCode);
+          
+            if (!charStr.match(/^[0-9]+$/))
+              e.preventDefault();
+      }
+
       //função para eu ficar digitando login toda hora =D
       function autoLogin(){
         document.getElementById('usuario').value='00000000000'

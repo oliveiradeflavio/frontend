@@ -9,6 +9,7 @@
   }
 
 .box input[type="text"],
+.box input[type="number-format"],
 .box input[type="password"]{
   border: 0;
   background: none;
@@ -32,6 +33,7 @@
 }
 
 .box input[type="text"]:focus,
+.box input[type="number-format"]:focus,
 .box input[type="password"]:focus{
   width: 300px;
   border-color: #fff;
@@ -78,6 +80,7 @@ a:hover{
 
 @media (min-width: 320px) { 
   .box input[type="text"],
+  .box input[type="number-format"],
   .box input[type="password"]{
     width: 200px;
   }
