@@ -18,6 +18,7 @@
 
     <!-- css personzalido esqueciSenha -->
     <link rel="stylesheet" href="../css/estiloRecuperaSenha.css">
+    <link rel="stylesheet" href="/plugins/sweetalert/dist/sweetalert2.min.css">
    
   </head>
   <body>
@@ -25,12 +26,12 @@
     <div class="row">
       <div class="col-md-12">
 
-        <form class="box" id="formEsqueciSenha" action="enviaRecuperacaoSenha.php" method="post">
+        <form class="box"  id="formEsqueciSenha" action="enviaRecuperacaoSenha.php" method="post">
           <h1>Recuperação de Senha</h1>
           <p>Você receberá no seu e-mail a nova senha</p>
           <input type="text" id="nomecompleto" name="nomecompleto" value="" placeholder="Nome completo" autocomplete="off">
           <input type="number_format" id="cpf" maxlength="11" name="cpf" value="" placeholder="CPF" autocomplete="off">
-          <input type="email" onblur="validaEmail(email)" id='email' name="email" value="" placeholder="e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" autocomplete="off">
+          <input type="email"  id='email' name="email" value="" placeholder="e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" autocomplete="off">
           <button type="button" onclick="verificaCampo()" name="btnRecuperacaoSenha">Enviar</button>
         </form>
       </div>
@@ -39,11 +40,9 @@
 
 
   <script src="../plugins/jquery/jquery.min.js"></script>
-  <script src="../plugins/jquery-validation/dist/jquery.validate.js"></script>
-  <script src="../plugins/jquery-validation/dist/additional-methods.min.js"></script>
-  <script src="../plugins/jquery-validation/dist/localization/messages_pt_BR.min.js"></script>
   <script src="../plugins/jquery-mask/jquery.mask.min.js"></script>
   <script src="/js/ajax.js"></script>
   <script src="/js/esqueciSenha.js"></script>
+  <script src="/plugins/sweetalert/dist/sweetalert2.all.min.js"></script>
   </body>
 </html>

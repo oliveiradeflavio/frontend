@@ -3,6 +3,8 @@ let content  = document.getElementById('ajax-content')
 function fetchContent(el){
     let view = el.getAttribute('a-view')
     let folder = el.getAttribute('a-folder')
+    const scriptSRC = el.getAttribute('a-script')
+
     fetch(`/ajax/${folder}/${view}.html`)
     .then(response => {
         let html = response.text()
@@ -14,13 +16,13 @@ function fetchContent(el){
     .then(() => {
         const script = document.createElement("script")
         script.async = true
-        script.src = "/js/esqueciSenha.js"
+        script.src = `/js/${scriptSRC}.js`
         document.body.appendChild(script);
     })
     .then(() => {
         const script = document.createElement("script")
         script.async = true
-        script.src = "/js/gerenciarUsuario.js"
+        script.src = "/js/esqueciSenha.js"
         document.body.appendChild(script);
     })
     .then(() => {
@@ -29,6 +31,8 @@ function fetchContent(el){
         script.src = "/js/perfil.js"
         document.body.appendChild(script);
     })
+
+    /*
     .then(() => {
         const script = document.createElement("script")
         script.async = true
@@ -41,5 +45,5 @@ function fetchContent(el){
         script.src = "/js/gerenciarProdutos.js"
         document.body.appendChild(script);
     })
-    
+    */
 }

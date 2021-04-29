@@ -1,13 +1,13 @@
 //preenche os campos da página perfil para não ficar vazio durante o teste/apresentação
 function preenchPerfil(){
     document.getElementById('nome').value="Flávio Oliveira"
-    document.getElementById('cpf').value='83913782257'
+    document.getElementById('cpfPerfil').value='000.000.000-00'
     document.getElementById('email').value='teste@teste.com.br'
   }
 
   //máscara para cpf
   $(document).ready(function(){
-    $('#cpf').mask('000.000.000-00')
+    $('#cpfPerfil').mask('000.000.000-00')
   })
 
   //verifcando email 
@@ -17,7 +17,7 @@ function preenchPerfil(){
   }
 
   //valida cpf
-  function validaCPF(cpf) {
+  function validaCPF(cpfPerfil) {
     if (typeof cpf !== "string") return false
     cpf = cpf.replace(/[\s.-]*/igm, '')
     if (
@@ -52,21 +52,51 @@ function preenchPerfil(){
     return true
 }
 
+function habilitaCamposSenhas(){
+    if (document.getElementById('check-senha').checked){
+        document.getElementById('senhaAntiga').disabled = false
+        document.getElementById('senhaNova').disabled = false
+        
+    }else {
+        document.getElementById('senhaAntiga').disabled = true
+        document.getElementById('senhaNova').disabled = true
+        document.getElementById('senhaAntiga').value = ""
+        document.getElementById('senhaNova').value = ""
+    }
+}
+
 function validaSenha(){
     var senhaAntiga = document.getElementById('senhaAntiga').value
     var senhaNova = document.getElementById('senhaNova').value
     
     if (senhaAntiga == senhaNova) {
-        alert('Sua nova senha precisa ser diferente da senha antiga.')
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            backdrop: false,
+            text: 'Sua nova senha precisa ser diferente da senha antiga'
+        })
     } else {
-        alert('Senha alterada.')
+        Swal.fire({
+            icon: 'success',
+            title: 'Parabéns',
+            backdrop: false,
+            text: 'Senha alterada com sucesso'
+        })
+   
     }
 }
 
-
 function checaCampos(){
-    validaSenha()
-    if(validaCPF(cpf) == false){
-        alert('cpf incorreto')
+    if(document.getElementById('check-senha').checked){
+        validaSenha()
+    }else if(validaCPF('cpfPerfil') == false){
+        Swal.fire({
+            icon: 'warning',
+            title: 'Oops...',
+            backdrop: false,
+            text: 'Número de CPF inválido'
+           })
     }
+   
 }

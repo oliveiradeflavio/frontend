@@ -76,10 +76,10 @@
             <h2>Gerenciar Fornecedores</h2>
           </div>
          <div class="panel-row">
-           <button class="panel panel-50" a-view="cadastrarFornecedor" onclick="fetchContent(this)" a-folder="cadastros">
+           <button class="panel panel-50" a-view="cadastrarFornecedor" a-script="gerenciarFornecedor" onclick="fetchContent(this)" a-folder="cadastros">
             <i class="fas fa-truck-loading"></i>
               Cadastrar Fornecedor</button>
-           <button class="panel panel-50" a-view="vizualizarFornecedor" onclick="fetchContent(this)" a-folder="cadastros">
+           <button class="panel panel-50" a-view="vizualizarFornecedor" a-script="gerenciarFornecedor" onclick="fetchContent(this)" a-folder="cadastros">
             <i class="fas fa-search"></i>
             Vizualizar Fornecedor </button>
          </div>
@@ -89,9 +89,6 @@
       </main>
     </div>
     <script src="../plugins/jquery/jquery.min.js"></script>
-    <script src="../plugins/jquery-validation/dist/jquery.validate.js"></script>
-    <script src="../plugins/jquery-validation/dist/additional-methods.min.js"></script>
-    <script src="../plugins/jquery-validation/dist/localization/messages_pt_BR.min.js"></script>
     <script src="../plugins/jquery-mask/jquery.mask.min.js"></script>
     <script src="../js/ajax.js"></script>
     <script src="/js/gerenciarFornecedor.js"></script>

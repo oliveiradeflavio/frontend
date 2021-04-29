@@ -58,23 +58,44 @@ function validaCPF(cpf) {
       
       if (nome === "" || cpf === "" || email === "") {
         console.log("campos obrigatório");
-        alert("Preenchimento dos campos é obrigatório.")
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Preenchimento dos campos é obrigatório.'
+         })
 
       }else if(nome.length < 10){
-        console.log("Campo nome está incompleto")
-        alert("Digite o nome completo")
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Digite o nome completo'
+         })
 
       }else if (validaCPF(cpf) == false)  {
-        console.log("cpf invalido");
-        alert("Número de CPF inválido")
+        Swal.fire({
+          icon: 'warning',
+          title: 'Oops...',
+          text: 'Número de CPF inválido'
+         })
   
       }else if (validaEmail(email) == false) {
         console.log("email incorreto")
+        Swal.fire({
+          icon: 'warning',
+          title: 'Oops...',
+          text: 'email incorreto'
+         })
 
       }else{
-        document.getElementById("formEsqueciSenha").submit
-        console.log("enviado com sucesso")
-        alert("Em alguns minutos a nova senha chegará no seu e-mail.")
+        Swal.fire({
+          icon: 'success',
+          title: 'Dados enviado com sucesso',
+          text: 'Em alguns minutos a nova senha chegará no seu e-mail.',
+          showConfirmButton: false,
+          timer: 4000
+         }).then(() => {
+          document.getElementById("formEsqueciSenha").submit
+         })
       }
   }
 
@@ -83,4 +104,4 @@ function validaCPF(cpf) {
     nome = document.getElementById('nomecompleto').value = ""
     cpf =  document.getElementById('cpf').value = ""
     email = document.getElementById('email').value = ""
-  }
+  } 

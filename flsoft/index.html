@@ -26,6 +26,7 @@
 
     <!--css personalizado tela de login -->
     <link rel="stylesheet" href="css/estiloLogin.css">
+    <link rel="stylesheet" href="plugins/sweetalert/dist/sweetalert2.min.css">
 
 
 
@@ -58,10 +59,8 @@
 
 
 
-    <script src="../plugins/jquery/jquery.min.js"></script>
-    <script src="../plugins/jquery-validation/dist/jquery.validate.js"></script>
-    <script src="../plugins/jquery-validation/dist/additional-methods.min.js"></script>
-    <script src="../plugins/jquery-validation/dist/localization/messages_pt_BR.min.js"></script>
+    <script src="/plugins/jquery/jquery.min.js"></script>
+    <script src="/plugins/sweetalert/dist/sweetalert2.all.min.js"></script>
     <script>
     
       //função para eu ficar digitando login toda hora =D
@@ -75,16 +74,34 @@
         var recuperaSenha = document.getElementById('senha').value.trim()
 
         if (recuperaUsuario === "" || recuperaSenha === "") {
-           alert("Confira os campos cpf e senha")
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Confira os campos CPF e SENHA'
+           })
 
         }else if (recuperaUsuario != "00000000000" || recuperaSenha != "123") {
-          alert("Acesso inválido")
+          Swal.fire({
+            icon: 'error',
+            title: 'Atenção',
+            text: "Acesso inválido"
+          })
           document.getElementById('usuario').value = ""
           document.getElementById('senha').value = ""
         }else {
-          window.location.href = "/views/dashboard.html"
-          document.getElementById('usuario').value = ""
-          document.getElementById('senha').value = ""
+          Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Bem vindo',
+            text: 'Redirecionando para dashboard',
+            showConfirmButton: false,
+            timer: 1500
+          }).then(() => {
+            window.location.href = "/views/dashboard.html"
+            document.getElementById('usuario').value = ""
+            document.getElementById('senha').value = ""
+          })
+         
         }
       }
   </script>

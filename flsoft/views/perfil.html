@@ -24,6 +24,7 @@
       crossorigin="anonymous">
 
     <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../plugins/sweetalert/dist/sweetalert2.min.css">
 
   </head>
   <body onload="preenchPerfil()">
@@ -82,36 +83,41 @@
                           
                         </div>
                     </div>
-                     <div class=perfil-form>  
-                        <form>
+                     <div class=perfil-form >  
+                      <form name="perfilForm">
                     
                         <div class=row>
                        
                             <div class="form-group ">
                               <label for="nome">Nome completo</label>
-                              <input type="text" class="form-control" id="nome" placeholder="Nome completo">
+                              <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome completo">
                               </div>
 
                             <div class="form-group ">
                                 <label for="cpf">CPF</label>
-                                <input type="number-format" class="form-control" id="cpf" maxlength="11" name="cpf" placeholder="CPF">
+                                <input type="number-format" class="form-control" id="cpfPerfil" name="cpf" maxlength="11" name="cpf" placeholder="CPF">
                               </div>
                         </div>
                         
                         <div class="row">
                             <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="email" class="form-control" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email">
+                                <input type="email" class="form-control" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email">
                               </div>
-    
+                          
+                              <div class="form-group">
+                                <input type="checkbox" onclick="habilitaCamposSenhas()" class="form-check-input" id="check-senha">
+                                <label class="form-check-label" for="check-senha">Alterar Senha</label>
+                              </div>        
+
                             <div class="form-group">
                               <label for="senhaAntiga">Senha Antiga</label>
-                              <input type="password" class="form-control" id="senhaAntiga" placeholder="Senha Antiga">
+                              <input type="password" class="form-control" id="senhaAntiga" name="senhaantiga" placeholder="*****" disabled>
                             </div>
 
                             <div class="form-group">
                               <label for="senhaNova">Nova Senha</label>
-                              <input type="password" class="form-control" id="senhaNova" placeholder="Senha Nova">
+                              <input type="password" class="form-control" id="senhaNova" name="senhanova" placeholder="*****" disabled>
                             </div>
 
                             <div class="form-group">
@@ -121,12 +127,12 @@
                         </div>
                             <div class="row">
                                 <div class="form-group  ajusteBotoes">
-                                <button onclick="checaCampos()" class="btn btn-primary">Salvar</button>
+                                <button type="button" onclick="checaCampos()"  class="btn btn-primary">Salvar</button>
                                  <button class="btn btn-danger">Cancelar</button>
                                 </div>
                             </div>
 
-                          </form>
+                      </form>
                     </div>
                 </div> 
                      
@@ -142,10 +148,8 @@
 
 
     <script src="../plugins/jquery/jquery.min.js"></script>
-    <script src="../plugins/jquery-validation/dist/jquery.validate.js"></script>
-    <script src="../plugins/jquery-validation/dist/additional-methods.min.js"></script>
-    <script src="../plugins/jquery-validation/dist/localization/messages_pt_BR.min.js"></script>
     <script src="../plugins/jquery-mask/jquery.mask.min.js"></script>
+    <script src="../plugins/sweetalert/dist/sweetalert2.all.min.js"></script>
     <script src="/js/perfil.js"></script>
   </body>
 </html>

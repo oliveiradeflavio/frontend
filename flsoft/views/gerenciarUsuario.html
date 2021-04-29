@@ -77,10 +77,10 @@
           </div>
          <div class="panel-row">
          
-           <button class="panel panel-50" a-view="cadastrarUsuario" onclick="fetchContent(this)" a-folder="cadastros">
+           <button class="panel panel-50" a-view="cadastrarUsuario" a-script="gerenciarUsuario" onclick="fetchContent(this)" a-folder="cadastros">
             <i class="fas fa-user-plus"></i>
             <span>Cadastrar usuário</span></button>
-           <button class="panel panel-50" a-view="vizualizarUsuario" onclick="fetchContent(this)" a-folder="cadastros">
+           <button class="panel panel-50" a-view="vizualizarUsuario" a-script="gerenciarUsuario" onclick="fetchContent(this)" a-folder="cadastros">
             <i class="fas fa-search"></i>
             <span>Vizualizar Usuário</span> </button>
          </div>
@@ -91,9 +91,6 @@
     </div>
 
     <script src="../plugins/jquery/jquery.min.js"></script>
-    <script src="../plugins/jquery-validation/dist/jquery.validate.js"></script>
-    <script src="../plugins/jquery-validation/dist/additional-methods.min.js"></script>
-    <script src="../plugins/jquery-validation/dist/localization/messages_pt_BR.min.js"></script>
     <script src="../plugins/jquery-mask/jquery.mask.min.js"></script>
     <script src="/js/ajax.js"></script>
     <script src="/js/gerenciarUsuario.js"></script>

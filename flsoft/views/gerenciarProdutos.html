@@ -70,10 +70,10 @@
           <h2>Gerenciar Produtos</h2>
         </div>
        <div class="panel-row">
-         <button class="panel panel-50" a-view="cadastrarProdutos" onclick="fetchContent(this)" a-folder="cadastros">
+         <button class="panel panel-50" a-view="cadastrarProdutos" a-script="gerenciarProdutos" onclick="fetchContent(this)" a-folder="cadastros">
           <i class="fas fa-cart-arrow-down"></i>
           Cadastrar Produtos</button>
-         <button class="panel panel-50" a-view="vizualizarProdutos" onclick="fetchContent(this)" a-folder="cadastros">
+         <button class="panel panel-50" a-view="vizualizarProdutos" a-script="gerenciarProdutos" onclick="fetchContent(this)" a-folder="cadastros">
           <i class="fas fa-search"></i>
           Vizualizar Produtos </button>
        </div>
@@ -85,9 +85,6 @@
 
 
   <script src="../plugins/jquery/jquery.min.js"></script>
-  <script src="../plugins/jquery-validation/dist/jquery.validate.js"></script>
-  <script src="../plugins/jquery-validation/dist/additional-methods.min.js"></script>
-  <script src="../plugins/jquery-validation/dist/localization/messages_pt_BR.min.js"></script>
   <script src="../plugins/jquery-mask/jquery.mask.min.js"></script>
   <script src="../js/ajax.js"></script> 
   <script src="../js/gerenciarProdutos.js"></script> 
