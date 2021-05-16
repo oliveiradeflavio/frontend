@@ -1,0 +1,56 @@
+html{
+    cursor: url('../imagens/taco_baseball.png') 30 30, auto;
+    height: 100%;
+}
+
+body{
+    background-image: url('../imagens/bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.container{
+   margin-top: 150px;
+}
+
+.col{
+    padding: 10px;
+}
+
+.zumbi{
+    width: 30px;
+    height: 30px;
+}
+
+.zumbi2{
+    width: 60px;
+    height: 60px;
+}
+
+.zumbi3{
+    width: 80px;
+    height: 80px;
+}
+
+.painel{
+    position: absolute;
+    width: 240px;
+    padding: 10px;
+    left: 0px;
+    bottom: 0px;
+    border-top: 1px solid #fff;
+    background-color: #fff;
+    opacity: 0.6;
+    border-radius: 10px;
+}
+
+.vidas{
+    float: left;
+}
+
+.cronometro{
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATA ZUMBI</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/jogo.js"></script>
+</head>
+<body onresize="ajusteTamanhoTela()">
+    <div class="painel">
+        <div class="vidas">
+            <img id="v1" src="imagens/coracao_cheio.png" alt="vidas">
+            <img id="v2" src="imagens/coracao_cheio.png" alt="vidas">
+            <img id="v3" src="imagens/coracao_cheio.png" alt="vidas">
+        </div>
+        <div class="cronometro">
+            Tempo restante: <span id="cronometro"></span>
+        </div>
+    </div>
+    <script>
+        document.getElementById('cronometro').innerHTML = tempo
+        var criaZumbi = setInterval(function(){
+            posicaoRandomica()
+        }, criaZumbiTempo)
+    </script>
+</body>
+</html>
