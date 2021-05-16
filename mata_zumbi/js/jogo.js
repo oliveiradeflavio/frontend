@@ -13,7 +13,7 @@ if (nivel == 'normal'){
 }else if(nivel == 'dificil'){
     var criaZumbiTempo = 1000
 }else if(nivel == 'thewalkingdead'){
-    var criaZumbiTempo = 300
+    var criaZumbiTempo = 700
 }
 
 function ajusteTamanhoTela(){
@@ -42,7 +42,7 @@ function posicaoRandomica(){
         if (vidas > 3) {
             window.location.href = 'fim_de_jogo.html'
         }else{
-            //interage com a vida do personagem. A cada mosquito perdido o coração cheio é trocado pelo coração vazio
+            //interage com a vida do personagem. A cada zumbi perdido o coração cheio é trocado pelo coração vazio
             document.getElementById('v' + vidas).src='imagens/coracao_vazio.png'
             vidas++
         }
