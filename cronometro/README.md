@@ -59,16 +59,3 @@ Link do Projeto: [https://github.com/oliveiradeflavio/front-back-end](https://gi
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/fladoliveira/
 [product-screenshot]: https://github.com/oliveiradeflavio/front-back-end/blob/main/cronometro/imagens/cronometro.png
-
-
-
-
-# Cronometro
-###### Cronometro usado para o estudio de gravação, palestra e lives
-
-Os valores de tempo pode ser alterado facilmente.
-Quando o tempo estiver acabando as cores do background
-irão ser alternadas, e o tempo irá começar a fazer um efeito
-"shake".
-
-![](https://github.com/oliveiradeflavio/front-back-end/blob/main/cronometro/imagens/cronometro.png)
