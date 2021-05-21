@@ -42,7 +42,7 @@ Navegadores web
 <!-- ROADMAP -->
 ## Roadmap
 
-Veja os [problemas abertos] (https://github.com/oliveiradeflavio/fron-back-end/issues) para uma lista de recursos propostos (e problemas conhecidos).
+Veja os [problemas abertos] (https://github.com/oliveiradeflavio/front-back-end/issues) para uma lista de recursos propostos (e problemas conhecidos).
 
 
 <!-- CONTACT -->
