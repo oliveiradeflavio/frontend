@@ -13,7 +13,8 @@
 
 [![tela inicial][product-screenshot]]()
 
-Aplicação tem como tarefa, cadastrar despesas pessoais, consultas as despesas e remoção.
+Aplicação tem como tarefa, cadastrar despesas pessoais, consultar as despesas e remoção. No momento a aplicação está usando como armazenamento
+o LocalStorage do navegador.
 
 ### Construído com
 
@@ -27,7 +28,7 @@ Aplicação tem como tarefa, cadastrar despesas pessoais, consultas as despesas 
 <!-- GETTING STARTED -->
 ## Começando
 
-A aplicação disponivel para mac OS, Linux e Windows e para os navegadores mais recente Firefox, Chrome, EDGE entre outros.
+A aplicação disponivel para mac OS, Linux e Windows e para os navegadores mais recente Firefox, Chrome, EDGE entre outros. 
 
 ### Pré-requisitos
 
