@@ -21,3 +21,27 @@
 .btn-excluir-despesa{
     width: 50%;
 }
+
+.navbar-expand-lg .navbar-nav .nav-item >  p{
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 5px;
+    font-size: 1.2em;
+    font-family: monospace;
+    padding: 4px;
+}
+
+label{
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 100;
+}
+
+.btnVoltar{
+    color: white;
+    text-decoration: none;
+}
+.btnVoltar:hover{
+    color: white;
+    text-decoration: none;
+}

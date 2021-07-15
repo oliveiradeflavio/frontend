@@ -118,7 +118,13 @@ let bd = new Bd()
 
 function letraMaiusculas(){
     let descricao = document.getElementById('descricao')
-    descricao.value = descricao.value.toUpperCase()
+    let adicionarDescricao = document.getElementById('adicionar_categoria')
+    if (descricao != null) {
+        descricao.value = descricao.value.toUpperCase()  
+    }
+    if (adicionarDescricao != null) {
+        adicionarDescricao.value = adicionarDescricao.value.toUpperCase() 
+    }
 }
 
 function criarOpcoesSelectTipo(){
@@ -128,7 +134,9 @@ function criarOpcoesSelectTipo(){
     option.forEach(function (item){
         option = document.createElement('option')
         option.text = item.toUpperCase()
-        select_tipo.append(option)
+        if (select_tipo != null) {
+            select_tipo.append(option) 
+        }
     })   
 }
 
@@ -180,7 +188,11 @@ function cadastrarDespesa(){
 function limpaCampos(){
     let lp = new Despesa()
     lp.limpaCampos()
-    pesquisarDespesa() //além de limpar campos, mostra novamente os itens na tabela
+    let btnConsultaDespesa = document.getElementById('btnConsultaDespesa')
+    if(btnConsultaDespesa != null){
+        pesquisarDespesa()
+    }
+  
     
 }
 
