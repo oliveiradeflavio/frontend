@@ -127,20 +127,38 @@ function letraMaiusculas(){
     }
 }
 
-function criarOpcoesSelectTipo(){
+function criarOpcoesSelectTipo(novaCategoria){
     let select_tipo = document.getElementById('tipo')
     let option = Array()
-    option = ['Alimentação', 'Educação', 'Lazer', 'Saúde']
-    option.forEach(function (item){
+    option = ['ALIMENTAÇÃO', 'EDUCAÇÃO', 'LAZER', 'SAÚDE']
+    
+    if (novaCategoria != null) {
+        option.length = 0 //para que não seja duplicado os valores 
+        option.push(novaCategoria)
+      
+    }
+    console.log(option);
+    option.forEach(function (item){ 
         option = document.createElement('option')
         option.text = item.toUpperCase()
         if (select_tipo != null) {
             select_tipo.append(option) 
+           
         }
     })   
 }
-
 criarOpcoesSelectTipo()
+
+//cadastra nova categoria 
+function cadastraNovaCategoria(){
+    let novaCategoria = document.getElementById('adicionar_categoria')
+    if (novaCategoria.value != '') {
+        criarOpcoesSelectTipo(novaCategoria.value)
+        novaCategoria.value = ''
+    }    
+}
+
+
 
 function cadastrarDespesa(){
     //recebendo a data no formato yyyy-mm-dd e mostrand para o usuário no formato dd/mm/yyyy
